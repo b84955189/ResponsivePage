@@ -1,0 +1,186 @@
+:root {
+    --global-width: 65%;
+}
+
+/*头部*/
+header{width: 100%;height: 60px;box-shadow: 0px 0px 5px 5px #ccc;margin-bottom: 20px;background-color: #FFF;font-size: 14px;font-weight: bold}
+.header_top_bar{width: var(--global-width);height: 60px;margin: 0 auto;display: flex;justify-content: space-between;align-items: center;}
+
+.header_top_bar_logo{flex-grow: 1;display: flex;align-items: center;}
+.header_top_bar_nav{flex-grow: 5;}
+.header_top_bar_nav>ul{display: flex;justify-content: space-around;height: 60px;align-items: center;}
+.header_top_bar_nav>ul>li:first-child{position: relative;}
+.header_top_bar_nav>ul>li:first-child>ol{position: absolute;z-index: 9999;top: 30px;left: -55px;background-color: #FFFFFF;width: 190px;box-shadow: -2px 5px 5px 1px #ccc;display: none;}
+.header_top_bar_nav>ul>li:first-child>ol>li>a{display: flex;align-items: center;padding: 5px 0px 5px 10px;}
+.header_top_bar_nav>ul>li:first-child>ol>li>a>img{padding-right: 10px;}
+.header_top_bar_sign_in{flex-grow: 2;}
+.header_top_bar_sign_in>ul{display: flex;justify-content: space-around;height: 60px;align-items: center;}
+.header_top_pop_up_nav_btn{display: none;color: rgba(31, 45, 61, 0.5);}
+.pop_up_nav_box{position: absolute;width: 100%;background-color: #FFFFFF;top: 60px;left: 0px;z-index: 9999;box-shadow: 15px 10px 10px 1px;overflow: hidden;display: none;}
+.pop_up_nav_box>ul{width: var(--global-width);margin: 0 auto;font-size: 15px;min-width: 200px;padding-top: 13px;}
+.pop_up_nav_box>ul>li{margin-bottom: 15px;}
+#id_more_course_list_min{display: none;}
+#id_more_course_list_min>li>a{display: flex;align-items: center;padding-left: 10px;}
+#id_more_course_list_min>li>a>span{padding-left: 10px;}
+/*课程导航*/
+nav{width: var(--global-width);padding: 5px;margin: 0 auto 20px auto;background-color: #FFF;border-radius: 10px;box-shadow: 0px 2px 3px 1px #ccc;font-size: 14px;font-weight: 400;}
+nav>ul{width: 100%;display: flex;justify-content: space-around;flex-wrap: wrap;padding: 10px 0px;}
+nav>ul>li>a{display: inline-block;width: 75px;height: 40px;line-height: 40px;text-align: center;}
+.nav-item-active{background-color: #8492a6;color: #FFFFFF;border-radius: 5px;}
+.nav-item-active:hover{color: #FFFFFF;}
+/*主体内容区*/
+.main_content{width: var(--global-width);margin: 0 auto;padding-bottom: 20px;}
+.content-row{width: 100%;display: flex;justify-content: space-between;align-items: center;margin-bottom: 80px;}
+.content-row>section{width: 23%;height: 200px;min-width: 220px;}
+.content-row>section>section:first-child{position: relative;margin-bottom: 5px;}
+.content-row>section>section:first-child>img{width: 100%;border-radius: 5px;}
+.course-status-type{position: absolute;z-index: 100;font-size: 14px;background-color: #36B37E;padding: 3px 8px;top: 10px;left: -10px;border: 2px solid #FFF;border-radius: 10px;color: #FFFFFF;}
+.course-tag{position: absolute;z-index: 100;background-color: rgba(28, 31, 33, 0.6);bottom: 10px;left: 6px;padding: 3px 5px; color: #FFFFFF;border-radius: 5px;font-size: 14px;}
+.course-mask{position: absolute;z-index: 99;width: 100%;height: 100%;background-color: rgba(255,255,255,0);}
+.course-mask:hover{background-color: rgba(255,255,255,0.2);}
+.course-title{display: block;padding: 5px 0;color: black;font-size: 15px;overflow: hidden;text-overflow: ellipsis;word-break: break-word;white-space: nowrap;}
+.course-title:hover{color: orangered;}
+.content-row>section>section:nth-child(2){margin-bottom: 5px;}
+.content-row>section>section:nth-child(3){font-size: 12px;}
+.content-row>section>section:nth-child(3)>section:first-child{display: flex;justify-content: flex-start;align-items: center;position: relative;margin-bottom: 5px;}
+.course-technology-type{padding: 3px 5px;background-color: #6d7fd3;color: #FFF;border-radius: 3px;margin: 0 3px 0 0;}
+.course-level{color: #8492A6;margin: 0 3px;}
+.course-user-count{color: #8492A6;margin: 0 3px;}
+.course-evaluation{letter-spacing: -3px;/*字符间距*/color: orange;position: absolute;right: 0;}
+.course-evaluation>i{font-size: 12px;}
+.content-row>section>section:nth-child(3)>section:last-child{display: flex;justify-content: space-between;}
+.course-describe{color: #8492A6;}
+.course-open-status{padding: 3px 5px;background-color: rgba(242, 13, 13, 0.6);color: #FFF;border-radius: 3px;font-size: 10px;}
+/*分页*/
+.pagination-bar{width: var(--global-width);margin: 30px auto;display: flex;justify-content: center;align-items: center;}
+.pagination-bar article{margin-left: 5px;}
+.pagination-bar a{display: block;padding: 5px 10px;border: 1px solid #E5E9F2;border-radius: 5px;background-color: #FFF;color: #C0CCDA;}
+.pagination-bar a:hover{background-color: #6B91FF!important;color: #FFFFFF!important;}
+.pagination-active{background-color: #175cff!important;color: #FFFFFF!important;border-color: #175cff!important;}
+/*底部区域*/
+footer{width: 100%;background-color: #FFFFFF;}
+.footer-bar{width: var(--global-width);height: 250px;margin: 0 auto;display: flex;justify-content: space-between;}
+.footer-bar>section{}
+.footer-bar-profile{width: 40%;position: relative;}
+.footer-logo-box{position: absolute;top: -30px;left: 50%;transform: translate(-50%,0);}
+.footer-site-describe{text-indent: 2em;margin-top: 95px;font-size: 14px;color: #8492A6;}
+.footer-bar-help{width: 35%;font-size: 15px;display: flex;justify-content: space-around;margin-top: 25px;}
+.footer-bar-help>section>h6{font-weight: bold;padding-bottom: 8px;border-bottom: 1px #0097e1 solid; }
+.footer-bar-help>section>ul>li{margin-top: 17px;font-size: 13px;}
+.footer-bar-contact{width: 15%;min-width: 110px;display: flex;flex-direction: column;justify-content: center;align-items: center;color: #8492A6;font-size: 15px;}
+.footer-bar-contact>img{height: 100px;background-color: #FFF;padding: 1px;box-shadow: 0px 0px 5px 2px #ccc;margin-bottom: 5px;}
+.copyright{width: var(--global-width);margin: 0 auto;text-align: center;color: #8492A6;font-weight: bold;}
+
+
+
+/*Media Query*/
+/*PC*/
+@media screen and (min-width: 1200px){
+    .main_content{min-width: 1105px;}
+    nav{min-width: 1105px;}
+    .footer-bar{min-width: 1160px;}
+}
+/*IPad*/
+@media screen and (min-width: 765px) and (max-width: 1200px){
+    .header_top_bar_nav{display: none;}
+    .header_top_bar_sign_in{display: none;}
+    .header_top_pop_up_nav_btn{display: block;}
+
+    .rotation-show-box{display: none;}
+
+    .main_content{min-width: 762px}
+    .content-row{flex-wrap: wrap;justify-content: space-around;margin-bottom: 0px;}
+    .content-row>section{width: 45%;padding-bottom: 100px;}
+    .footer-bar{min-width: 680px;}
+}
+/*lg-Mobile*/
+@media screen and (min-width: 580px ) and (max-width: 765px){
+    .header_top_bar_nav{display: none;}
+    .header_top_bar_sign_in{display: none;}
+    .header_top_pop_up_nav_btn{display: block;}
+
+    .rotation-show-box{display: none;}
+
+    .main_content{width: 70%;min-width: 532px;}
+    .content-row{flex-wrap: wrap;justify-content: center;margin-bottom: 0px;}
+    .content-row>section{width: 100%;padding-bottom: 230px;}
+     footer{height: 385px;}
+    .footer-bar{flex-direction: column;align-items: center;}
+    .footer-bar-profile{width: 100%;margin-bottom: 80px;}
+    .footer-bar-help{display: none;}
+    .copyright{margin-top: 108px;}
+
+}
+/*lm-Mobile*/
+@media screen and (max-width: 580px){
+    .header_top_bar_nav{display: none;}
+    .header_top_bar_sign_in{display: none;}
+    .header_top_pop_up_nav_btn{display: block;}
+
+    .rotation-show-box{display: none;}
+
+    .main_content{width: 90%;}
+    .content-row{flex-wrap: wrap;justify-content: center;margin-bottom: 0px;}
+    .content-row>section{width: 100%;padding-bottom: 180px;}
+    footer{height: 440px;}
+    .footer-bar{flex-direction: column;align-items: center;min-width: 230px;}
+    .footer-bar-profile{width: 100%;margin-bottom: 80px;}
+    .footer-bar-help{display: none;}
+    .copyright{margin-top: 168px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*[class*='col']{margin: 0 auto;}*/
+.col-1{width: 8.3%}
+.col-2{width: 16.6%}
+.col-3{width: 24.9%}
+.col-4{width: 33.2%}
+.col-5{width: 41.5%}
+.col-6{width: 49.8%}
+.col-7{width: 58.1%}
+.col-8{width: 66.4%}
+.col-9{width: 74.7%}
+.col-10{width: 83%}
+.col-11{width: 91.3%}
+.col-12{width: 99.6%}
